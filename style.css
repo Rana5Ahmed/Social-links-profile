@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format('truetype');
+}
+
+body{
+    background-color: hsl(0, 0%, 8%);
+    font-family:"Inter" ;
+}
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh auto;
+    padding: 30px;
+    max-width:400px;
+    min-height: 550px;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 10px;
+}
+div{
+text-align: center;
+}
+
+div img{
+    border-radius: 50%;
+    width: 50%;
+}
+
+p{
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+}
+
+.name p{
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+span{
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(75, 94%, 57%);
+}
+.description{
+    font-weight: 400;
+}
+button{
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    max-width: 350px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    transition:  background-color 0.5s ease;
+}
+button:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+    font-weight: 600;
+}
+/* Mobile Screens (320px - 375px) */
+@media (max-width:375px)  {
+    .parent{
+        width: 90%;
+        padding: 15px;
+    }
+    button{
+        width: 80%;
+        margin: 4px;
+        font-size: 14px;
+
+    }
+}
+/* Large Desktop Screens (1440px and beyond) */
+@media (min-width: 1024px) {
+    button {
+        font-size: 16px;
+    }
+}
