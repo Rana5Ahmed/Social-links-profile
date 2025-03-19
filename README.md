@@ -63,4 +63,5 @@ Feel free to submit a **pull request** or open an **issue** if you have suggesti
 
 ## Author
 👤 Rana Elwakeel under the supervision of frontend mentor
+
 🔗 (https://github.com/Rana5Ahmed)
